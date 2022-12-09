@@ -1,0 +1,5 @@
+export const MATIC = 'Matic'
+export const W3L = 'W3L'
+export const TMA = 'TMA'
+export const AFS = 'AFS'
+export const DEFAULT_VALUE = 'Select Token'
