@@ -1,6 +1,7 @@
 import React from 'react'
 import Selector from './Selector'
 
+// eslint-disable-next-line react/display-name
 const SwapField = React.forwardRef(({ obj }, inputRef) => {
   const { id, value = '', setValue, defaultValue, setToken, ignoreValue } = obj
 
