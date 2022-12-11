@@ -5,6 +5,22 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'purple': '#DE31FA',
+      'midnight': '#140416',
+      'zinc': '#313032',
+      'pale': '#F8D6FE',
+      'yellow': '#EAD201',
+      'gray': '#A59FA6',
+      'ash': '#CEC6CF',
+      'fairy': '#4A1053',
+      'fuchsia': '#9747FF',
+      'bubble': '#E976FC',
+      'bunnie': '#FDFCFE',
+    },
     extend: {
       backgroundImage: {
         uniswap_bg:

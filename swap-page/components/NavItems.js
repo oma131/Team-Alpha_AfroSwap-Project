@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 //import { ArrowSmUpIcon } from '@heroicons/react/outline'
 
 const NavItems = () => {
@@ -14,7 +15,7 @@ const NavItems = () => {
         className={getNavIconClassName(HOME)}
         onClick={() => setSelectedNavItem(HOME)}
       >
-        {HOME}
+        <Link href="/">{HOME}</Link>
       </p>
       <p
         className={getNavIconClassName(SWAP)}
@@ -26,15 +27,8 @@ const NavItems = () => {
         className={getNavIconClassName(LEARN)}
         onClick={() => setSelectedNavItem(LEARN)}
       >
-        {LEARN}
+        <Link href="/learn">{LEARN}</Link>
       </p>
-      {/* <p
-        className={getNavIconClassName(CHART)}
-        onClick={() => window.open('https://info.uniswap.org/#/', '_blank')}
-      >
-        {CHART}
-        <ArrowSmUpIcon className='h-4 rotate-45' />
-      </p> */}
     </div>
   )
 
@@ -43,7 +37,7 @@ const NavItems = () => {
       'p-1 px-4 cursor-pointer border-[4px] border-transparent flex items-center'
     className +=
       name === selectedNavItem
-        ? 'text-white border-zinc-900 rounded-full'
+        ? 'text-white border-zinc rounded-full'
         : ''
     return className
   }

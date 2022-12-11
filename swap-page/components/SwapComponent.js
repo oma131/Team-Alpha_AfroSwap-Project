@@ -142,21 +142,21 @@ const SwapComponent = () => {
   }, [outputValue, srcToken])
 
   return (
-    <div className='bg-fuchsia-50 w-[35%] p-4 px-6 rounded-xl'>
-      <div className='flex items-center justify-between text-purple-900 py-4 px-1'>
+    <div className='bg-bunnie w-[35%] p-4 px-6 rounded-xl'>
+      <div className='flex items-center justify-between text-midnight py-4 px-1'>
         <p>Swap</p>
         <CogIcon className='h-6' />
       </div>
-      <div className='relative bg-[#F8D6FE] p-4 py-6 rounded-xl mb-2 border-[2px] border-transparent hover:border-fuchsia-400'>
+      <div className='relative bg-[#F8D6FE] p-4 py-6 rounded-xl mb-2 border-[2px] border-transparent hover:border-bubble'>
         {srcTokenComp}
 
         <ArrowSmDownIcon
-          className='absolute left-1/2 -translate-x-1/2 -bottom-6 h-10 p-1 bg-[#F8D6FE] border-4 border-fuchsia-50 text-fuchsia-400 rounded-xl cursor-pointer hover:scale-110'
+          className='absolute left-1/2 -translate-x-1/2 -bottom-6 h-10 p-1 bg-[#F8D6FE] border-4 border-bunnie text-bubble rounded-xl cursor-pointer hover:scale-110'
           onClick={handleReverseExchange}
         />
       </div>
 
-      <div className='bg-[#F8D6FE] p-4 py-6 rounded-xl mt-2 border-[2px] border-transparent hover:border-fuchsia-400'>
+      <div className='bg-[#F8D6FE] p-4 py-6 rounded-xl mt-2 border-[2px] border-transparent hover:border-bubble'>
         {destTokenComp}
       </div>
 
@@ -198,9 +198,9 @@ const SwapComponent = () => {
     let className = 'p-4 w-full my-2 rounded-xl'
     className +=
       swapBtnText === ENTER_AMOUNT || swapBtnText === CONNECT_WALLET
-        ? ' text-gray-200 bg-gray-400 pointer-events-none'
-        : ' bg-gradient-to-r from-purple-700 via-purple-500 to-fuchsia-600 text-white'
-    className += swapBtnText === INCREASE_ALLOWANCE ? ' bg-yellow-600' : ''
+        ? ' text-white bg-ash pointer-events-none'
+        : ' bg-gradient-to-r from-purple via-fuchsia to-fuchsia text-white'
+    className += swapBtnText === INCREASE_ALLOWANCE ? ' bg-yellow' : ''
     return className
   }
 
