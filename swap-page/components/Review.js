@@ -3,9 +3,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import test1 from "../public/IMG_1.JPG";
-import test3 from "../public/IMG_3.jpg";
-import test2 from "../public/IMG_2.PNG";
+import test1 from "../public/test1.jpg";
+import test3 from "../public/test3.jpg";
+import test2 from "../public/test2.png";
 
 class Review extends Component {
   render() {
