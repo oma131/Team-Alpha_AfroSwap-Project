@@ -1,8 +1,10 @@
 import Link from 'next/link';
+
+import Image from "next/image";
 import { useState } from 'react';
 import{SunIcon ,MoonIcon} from "@heroicons/react/solid";
 import useDarkMode from '../utils/useDarkMode';
-import Head from "next/head";
+import logo from "../public/fullLogo.svg"
 
 export const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -21,7 +23,7 @@ export const Navbar = () => {
       <nav className='fixed w-full top-0 flex items-center flex-wrap bg-purplewhite dark:bg-midnight bg-opacity-50 dark:bg-opacity-50 px-12 py-2 '>
         <Link href='/'>
           <div className='inline-flex items-center p-2 mr-2 h-12'>
-            <img src='./fullLogo.svg' alt='Afroswap Main logo' />
+            <Image src={logo} alt='Afroswap Main logo' />
           </div>
         </Link>
         <button

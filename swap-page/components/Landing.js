@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import crown from "../public/crown.png";
-import frame from "../public/Frame2.PNG";
+import frame2 from "../public/frame2.png";
 import { Review } from "./Review";
 import Link from "next/link";
 
@@ -41,7 +41,7 @@ export default function Landing() {
                     Have direct access to rare tokens and coins at affordable trade rates.
                     </p>
                     <div className={styles.frame2}>
-                    <Image src={frame} alt="Logo" width={600} height={400} />
+                    <Image src={frame2} alt="Logo" width={600} height={400} />
                     </div>
                 </div>
             </section>

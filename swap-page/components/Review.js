@@ -25,7 +25,7 @@ class Review extends Component {
           interval={6100}
         >
           <div id={styles.carouse}>
-            <Image src={test1} width={50} height={50} />
+            <Image src={test1} width={50} height={50} alt="test1" />
             <div className={styles.myCarousel}>
               <h3>Mariam Abdul</h3>
               <h4 className={styles.profilejob}>Designer</h4>
@@ -37,7 +37,7 @@ class Review extends Component {
           </div>
 
           <div id={styles.carouse}>
-            <Image src={test2} width={50} height={50} />
+            <Image src={test2} width={50} height={50} alt="test2"/>
             <div className={styles.myCarousel}>
               <h3>Favour Obi</h3>
               <h4 className={styles.profilejob}>Front-end dev</h4>
@@ -49,7 +49,7 @@ class Review extends Component {
           </div>
 
           <div id={styles.carouse}>
-            <Image src={test3} width={50} height={50} />
+            <Image src={test3} width={50} height={50} alt="test3" />
             <div className={styles.myCarousel}>
               <h3>Laura Ade</h3>
               <h4 className={styles.profilejob}>Blockchain developer</h4>

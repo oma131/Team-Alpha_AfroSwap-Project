@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import logo from "../public/fullLogo.svg";
+import fulllogo from "../public/fullLogo.svg";
 // toast
 import toast, { Toaster } from 'react-hot-toast';
 import Link from "next/link";
@@ -36,7 +36,7 @@ function Footer() {
           </div>
         </div>
         <Image
-          src={logo}
+          src={fulllogo}
           alt="logo"
           className={styles.logo2}
           width={600}
