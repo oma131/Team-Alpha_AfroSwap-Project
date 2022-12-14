@@ -25,7 +25,7 @@ export default function Landing() {
                     </Link>
 
                     <Link href="#sectionca">
-                        <button className={styles.learn}>Join Our Community</button>
+                        <button className={styles.learn} scroll={false}>Join Our Community</button>
                     </Link>
                     </div>
                 </div>
@@ -45,8 +45,8 @@ export default function Landing() {
                     </div>
                 </div>
             </section>
-            <div id={styles.sectionca} className="bg-midnight dark:bg-purplewhite text-white dark:text-midnight">
-                <section className={styles.sectionc}>
+            <section id="sectionca" className="bg-midnight dark:bg-purplewhite text-white dark:text-midnight">
+                <div className={styles.sectionc}>
                     <h2 className={styles.Topicc}>Community</h2>
                     <p className={styles.sectcheader}>CONNECT WITH US</p>
                     <p className={styles.communityheader}>
@@ -68,8 +68,8 @@ export default function Landing() {
                     <div className={styles.listing}>
                         <button className={styles.discord}>Join Discord</button>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
             <Review />
         </>
     );

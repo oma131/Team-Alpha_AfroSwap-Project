@@ -68,20 +68,20 @@ export const Navbar = () => {
                     </div>
                 </Link>
             </div>
+            <Link href="/swap">
+              <div
+                class="inline-block rounded-lg bg-gradient-to-r from-purple via-fuchsia to-fuchsia px-4 py-3 text-sm text-lg font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+                >
+                Swap Token
+              </div>
+            </Link>
+            {colorTheme === "light" ? (
+              <SunIcon className="w-10 h-10 text-yellow " role="button" onClick={() => setTheme('light')} />
+              ) : (
+              <MoonIcon className="w-10 h-10 text-purple " role="button" onClick={() => setTheme('dark')} />
+            )}
         </div>
         
-        <Link href="/swap">
-            <div
-            class="inline-block rounded-lg bg-gradient-to-r from-purple via-fuchsia to-fuchsia px-4 py-3 text-sm text-lg font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
-            >
-            Swap Token
-            </div>
-        </Link>
-        {colorTheme === "light" ? (
-          <SunIcon className="w-10 h-10 text-yellow " role="button" onClick={() => setTheme('light')} />
-          ) : (
-          <MoonIcon className="w-10 h-10 text-purple " role="button" onClick={() => setTheme('dark')} />
-        )}
       </nav>
     </>
   );
