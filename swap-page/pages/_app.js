@@ -1,6 +1,8 @@
 import '../styles/globals.css'
 import '@rainbow-me/rainbowkit/styles.css'
 import merge from 'lodash.merge'
+import "tailwindcss/tailwind.css";
+
 
 import {
   getDefaultWallets,

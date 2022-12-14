@@ -1,3 +1,4 @@
+
 .container {
   padding: 0 2rem;
 }
@@ -130,30 +131,29 @@
 
 /* landing */
 #home {
-  color: white;
-  /* padding-top: 45px; */
+  height: 100vh;
 }
 
 #sectiona {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 0px 50px;
+  align-items: center;
+  padding: 100px 50px 0px 50px;
   /* padding-bottom: 40px; */
-  margin-top: 35px;
-  margin-bottom: 30px;
-  height: 430px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 95vh;
 }
 
 .Topic {
   line-height: 2.5rem;
-  color: #fff;
   /* margin: auto; */
 }
 div .stata {
   display: inline;
-  color: #7b6e7f;
-  background-color: #f8d6fe;
+  color: #fdfcfe;
+  background-color: #df31fa;
   padding: 5px;
   border: none;
   border-radius: 8px;
@@ -177,12 +177,12 @@ div .statc {
 .swap {
   text-decoration: none;
   background: linear-gradient(to right, #9847ff, #df31fa);
-  color: white;
+  color: #fafafa;
   margin-right: 24px;
   border: none;
   border-radius: 12px;
   font-size: 18px;
-  padding: 6px;
+  padding: 6px 15px 6px 15px;
   transition: 0.2 ease-in-out;
   font-weight: 500;
 }
@@ -202,7 +202,8 @@ div .statc {
   padding: 6px;
   transition: 0.2 ease-in-out;
   font-weight: 500;
-  background-color: #140416 !important;
+  background-color: transparent !important;
+  font-family: 'Titillium Web', sans-serif;
 }
 .learn:hover {
   /* background: linear-gradient(to left, #9847ff, #df31fa); */
@@ -223,6 +224,21 @@ div .statc {
   color: black;
 }
 
+#sectionca {
+  height: 90vh;
+}
+#sectionb{
+  height: 100vh;
+}
+.sectionba {
+  padding: 0px 50px 0px 50px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .frame2 img {
   height: 400px;
   width: 100%;
@@ -230,12 +246,11 @@ div .statc {
   margin-bottom: 50px;
 }
 #sectionb,
-#sectionc {
-  color: white;
+.sectionc {
   text-align: center;
 }
 #sectionb h2,
-#sectionc h2 {
+.sectionc h2 {
   font-size: 26px;
   font-weight: 700;
 }
@@ -251,8 +266,13 @@ div .statc {
   margin-bottom: 25px;
   display: inline-block;
 }
-#sectionc {
+.sectionc {
+  padding-top: 100px;
   padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .communityheader {
@@ -261,10 +281,9 @@ div .statc {
   text-align: center;
   margin: auto;
   padding-top: 20px;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
 }
 .sectcheader {
-  color: #fff;
   font-size: 35px;
   font-weight: 700;
 }
@@ -279,7 +298,7 @@ div .statc {
   font-size: 20px;
   padding-bottom: 15px;
 } */
-#sectionc li {
+.sectionc li {
   font-size: 18px;
   padding-bottom: 15px;
   list-style: none;
@@ -287,10 +306,10 @@ div .statc {
 .discord {
   font-size: 18px;
   background: linear-gradient(to right, #9847ff, #df31fa);
+  color: #fdfcfe;
   padding: 15px;
   border: none;
   border-radius: 12px;
-  color: white;
   transition: 0.2 ease-in-out;
   margin-bottom: 25px;
   font-weight: 500;
@@ -304,6 +323,10 @@ div .statc {
   padding: 20px;
 }
 @media only screen and (max-width: 650px) {
+  .frame1 img {
+    width: 70%;
+    height: 70%;
+  }
   #sectiona {
     display: flex;
     flex-direction: column;
@@ -315,8 +338,8 @@ div .statc {
     padding: 30px 20px;
   }
 
-  #sectionc li,
-  #sectionc p {
+  .sectionc li,
+  .sectionc p {
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -325,6 +348,13 @@ div .statc {
 }
 
 /* Reviews */
+#review {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .Testheading {
   border: 2px solid #c239fb;
   padding: 11px;
@@ -334,12 +364,11 @@ div .statc {
   font-size: 26px;
   font-weight: 700;
 }
-.sectiontest {
+#sectiontest {
   text-align: center;
   margin-top: 3% !important;
-  color: #fff;
 }
-.sectiontest p {
+#sectiontest p {
   font-size: 20px;
   margin-bottom: 30px;
 }
@@ -656,6 +685,7 @@ div .statc {
 
 .listing {
   text-align: center;
+  padding-top: 20px;
   padding-left: 15px;
   padding-right: 10px;
 }

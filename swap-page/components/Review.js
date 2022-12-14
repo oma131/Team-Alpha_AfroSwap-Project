@@ -10,14 +10,14 @@ import test2 from "../public/IMG_2.PNG";
 class Review extends Component {
   render() {
     return (
-      <>
-        <div className={styles.sectiontest}>
+      <div id={styles.review} className="bg-purplewhite dark:bg-midnight">
+        <div id={styles.sectiontest}>
           <h2 className={styles.Testheading}>Reviews</h2>
           <p>What our users are saying about us</p>
         </div>
 
         <Carousel
-          showArrows={true}
+          showArrows={false}
           infiniteLoop={true}
           showThumbs={false}
           showStatus={false}
@@ -25,7 +25,7 @@ class Review extends Component {
           interval={6100}
         >
           <div id={styles.carouse}>
-            <Image src={test1} width={60} height={50} />
+            <Image src={test1} width={50} height={50} />
             <div className={styles.myCarousel}>
               <h3>Mariam Abdul</h3>
               <h4 className={styles.profilejob}>Designer</h4>
@@ -37,7 +37,7 @@ class Review extends Component {
           </div>
 
           <div id={styles.carouse}>
-            <Image src={test2} width={60} height={50} />
+            <Image src={test2} width={50} height={50} />
             <div className={styles.myCarousel}>
               <h3>Favour Obi</h3>
               <h4 className={styles.profilejob}>Front-end dev</h4>
@@ -49,7 +49,7 @@ class Review extends Component {
           </div>
 
           <div id={styles.carouse}>
-            <Image src={test3} width={60} height={50} />
+            <Image src={test3} width={50} height={50} />
             <div className={styles.myCarousel}>
               <h3>Laura Ade</h3>
               <h4 className={styles.profilejob}>Blockchain developer</h4>
@@ -60,7 +60,7 @@ class Review extends Component {
             </div>
           </div>
         </Carousel>
-      </>
+      </div>
     );
   }
 }

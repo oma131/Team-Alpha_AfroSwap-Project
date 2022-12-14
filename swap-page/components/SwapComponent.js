@@ -56,7 +56,7 @@ const SwapComponent = () => {
   const [swapBtnText, setSwapBtnText] = useState(ENTER_AMOUNT)
   const [txPending, setTxPending] = useState(false)
 
-  const notifyError = msg => toast.error(msg, { duration: 6000 })
+  const notifyError = msg => toast.error(msg, { duration: 3000 })
   const notifySuccess = () => toast.success('Transaction completed.')
   const { address } = useAccount()
 

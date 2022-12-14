@@ -1,11 +1,12 @@
 import { Navbar } from "../components/NavBar";
+import { Footer } from "../components/Footer";
 import styles from "../styles/Home.module.css";
 
 export default function Swap() {
   return (
-    <div>
+    <div className="bg-purplewhite dark:bg-midnight text-midnight dark:text-white">
       <Navbar />
-      <div>
+      <div className="py-12">
         <section id={styles.Learn}>
           <div id={styles.learncard}>
             <div className={styles.learncarda}>
@@ -37,6 +38,7 @@ export default function Swap() {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 }

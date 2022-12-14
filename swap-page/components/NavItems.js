@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-//import { ArrowSmUpIcon } from '@heroicons/react/outline'
 
 const NavItems = () => {
   const HOME = 'Home'
