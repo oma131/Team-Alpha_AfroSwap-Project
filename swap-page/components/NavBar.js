@@ -20,18 +20,18 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className='fixed w-full top-0 flex items-center flex-wrap bg-purplewhite dark:bg-midnight bg-opacity-50 dark:bg-opacity-50 px-12 py-2 '>
+      <nav className='fixed w-full top-0 flex items-center flex-wrap bg-purplewhite dark:bg-midnight bg-opacity-100 dark:bg-opacity-100 px-12 py-2 '>
         <Link href='/'>
           <div className='inline-flex items-center p-2 mr-2 h-12'>
             <Image src={logo} alt='Afroswap Main logo' />
           </div>
         </Link>
         <button
-          className=' block p-3 hover:bg-purple rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className='lg:hidden  text-white block p-3 ml-auto outline-none'
           onClick={handleClick}
         >
           <svg
-            className='w-6 h-6'
+            className='w-6 h-6 bg-purple rounded'
             fill='none'
             stroke='currentColor'
             viewBox='0 0 24 24'
@@ -47,11 +47,11 @@ export const Navbar = () => {
         </button>
         {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
         <div
-          className={`${
-            active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          className={`w-full lg:inline-flex lg:flex-grow lg:w-auto ${
+            active ? 'p-12 lg:p-0 block' : 'hidden'
+          } `}
         >
-            <div className='flex flex-1 items-center justify-end md:justify-start'>
+            <div className='lg:flex flex-1 items-center justify-end md:justify-start'>
                 <Link href='/'>
                     <div className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-zinc dark:text-white items-center justify-center  hover:text-purple '>
                         Discover

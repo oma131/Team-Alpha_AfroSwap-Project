@@ -110,9 +110,20 @@
 }
 
 @media (max-width: 600px) {
+  #home {
+    padding-top: 200px;
+    height: 100vh;
+  }
+  .Topic{
+    padding-top: 80px;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .frame1 {
+    display: none;
   }
 }
 
@@ -131,24 +142,15 @@
 
 /* landing */
 #home {
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  padding: 100px 50px 0px 50px;
 }
 
-#sectiona {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 50px 0px 50px;
-  /* padding-bottom: 40px; */
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 95vh;
-}
 
 .Topic {
   line-height: 2.5rem;
-  /* margin: auto; */
 }
 div .stata {
   display: inline;
@@ -203,7 +205,6 @@ div .statc {
   transition: 0.2 ease-in-out;
   font-weight: 500;
   background-color: transparent !important;
-  font-family: 'Titillium Web', sans-serif;
 }
 .learn:hover {
   /* background: linear-gradient(to left, #9847ff, #df31fa); */
@@ -240,7 +241,7 @@ div .statc {
 }
 
 .frame2 img {
-  height: 400px;
+  height: 100%;
   width: 100%;
   padding: 30px 50px;
   margin-bottom: 50px;
@@ -287,17 +288,7 @@ div .statc {
   font-size: 35px;
   font-weight: 700;
 }
-.listing {
-  text-align: center;
-}
-/* .listing ul {
-  display: inline-block;
-  text-align: left;
-}
-.listing p {
-  font-size: 20px;
-  padding-bottom: 15px;
-} */
+
 .sectionc li {
   font-size: 18px;
   padding-bottom: 15px;
@@ -305,9 +296,9 @@ div .statc {
 }
 .discord {
   font-size: 18px;
-  background: linear-gradient(to right, #9847ff, #df31fa);
+  background: linear-gra dient(to right, #9847ff, #df31fa);
   color: #fdfcfe;
-  padding: 15px;
+  padding: 10px 10px;
   border: none;
   border-radius: 12px;
   transition: 0.2 ease-in-out;
@@ -318,24 +309,155 @@ div .statc {
   background: #fdfcfe;
   border-color: #9847ff;
   color: #c239fb;
-  border: 1px solid #c239fb;
-  box-shadow: 0.9px 0.8px #c239fb;
-  padding: 20px;
+  padding: 10px 10px;
 }
-@media only screen and (max-width: 650px) {
-  .frame1 img {
-    width: 70%;
-    height: 70%;
+
+@media only screen and (max-width: 850px) {
+  .sectionc{
+    margin-top: 350px;
   }
-  #sectiona {
+  .frame1{
+    width: 100%;
+    height: 50vh;
+  }
+  .Topic{
+    width: 90%;
+  }
+  .sectionba{
+    padding-top: 200px;
+  }
+  #review{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #review {
+    height: 50vh !important; 
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 40px;
-    gap: 40px;
+    align-items: center;
+    margin-bottom: 100px;
   }
+  .Testheading {
+    border: 2px solid #c239fb;
+    padding: 11px;
+    border-radius: 10px;
+    margin-bottom: 10px !important;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  #sectiontest {
+    text-align: center;
+    /* margin-top: 3% !important; */
+  }
+  #sectiontest p {
+    font-size: 20px;
+    margin-bottom: 15px !important;
+  }
+
+  #home {
+    height: 45vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 2px 60px; */
+    /* gap: 40px; */
+  }
+
+  .frame1{
+    width: 100%;
+    height: 50vh;
+  }
+
+  
+  /* .Topic {
+    line-height: 2.5rem;
+    width: 60%;
+    margin: auto;
+  } */
+  div .statb {
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 35px;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  div .statc {
+    width: 100%;
+    line-height: 1.5rem;
+    padding-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .swap {
+    text-decoration: none;
+    background: linear-gradient(to right, #9847ff, #df31fa);
+    color: #fafafa;
+    margin-right: 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 4px 10px;
+    transition: 0.2 ease-in-out;
+    font-weight: 500;
+  }
+  .swap:hover {
+    background: #fdfcfe;
+    border-color: #9847ff;
+    color: #c239fb;
+    border: 1px solid #c239fb;
+  }
+  .learn {
+    color: #c239fb;
+    border: 1px solid #c239fb;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 4px 10px;
+    transition: 0.2 ease-in-out;
+    font-weight: 500;
+    background-color: transparent !important;
+  }
+  .learn:hover {
+    /* background: linear-gradient(to left, #9847ff, #df31fa); */
+    background: white !important;
+    border-color: #9847ff;
+    border: 1px solid #c239fb;
+  }
+
+  #sectionb{
+    height: 50vh;
+  }
+
+  .sectionba {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .frame2 img {
     padding: 30px 20px;
+  }
+  .frame2 img {
+    height: 100%;
+    width: 100%;
+    padding: 30px 50px;
+    margin-bottom: 50px;
+  }
+  .sectionc{
+    margin-top: 350px;
+  }
+
+  .Topic{
+    width: 100%;
   }
 
   .sectionc li,
@@ -345,6 +467,7 @@ div .statc {
     padding-right: 10px;
     text-align: center;
   }
+  
 }
 
 /* Reviews */
@@ -440,7 +563,6 @@ div .statc {
   line-height: 29px !important;
   color: #fff;
   font-size: 17px;
-  font-family: sans-serif;
   max-height: 67px;
 }
 
@@ -448,7 +570,6 @@ div .statc {
   content: "“";
   color: #ddd;
   font-size: 26px;
-  font-family: monospace;
   font-weight: 100;
   /* padding-bottom: 30px; */
 }
@@ -457,7 +578,6 @@ div .statc {
   content: "”";
   color: #ddd;
   font-size: 26px;
-  font-family: monospace;
   font-weight: 100;
   line-height: 0;
 }
@@ -474,8 +594,8 @@ div .statc {
 .carousel.carousel-slider .control-arrow {
   background: #000 !important;
   height: 50px !important;
-  position: absolute;
-  top: 35% !important;
+  /* position: absolute; */
+  /* top: 35% !important; */
 }
 
 .App {
@@ -509,6 +629,40 @@ div .statc {
   .carousel .slide img {
     width: 24% !important;
     border-radius: 50%;
+  }
+  .frame1{
+    display: none;
+  }
+
+  .Topic{
+    padding-top: 5px;
+  }
+  .sectionba{
+    margin-top: 10px;
+  }
+
+  .sectionc{
+    margin-top: 350px;
+  }
+  .sectcheader{
+    font-size: 20px;
+  }
+  .communityheader{
+    font-size: 16px;
+  }
+  .discord{
+    font-size: 14px;
+  }
+
+  #review{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #footer{
+    margin-top: 300px;
+  }
+  .footera{
+    margin-top: 50px;
   }
 }
 
@@ -625,6 +779,10 @@ div .statc {
   #form button {
     width: 40%;
   }
+  .sectionba{
+    padding-top: 250px;
+  }
+  
 }
 @media only screen and (max-width: 350px) {
   .newslettera,
@@ -637,6 +795,17 @@ div .statc {
   .reserved {
     text-align: left;
   }
+  .sectionba{
+    margin-top: 100px;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .sectionba{
+    padding-bottom: 0;
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -644,6 +813,15 @@ div .statc {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .sectionba{
+    padding-top: 350px;
+  }
+  .frame2 img {
+    height: 100%;
+    width: 100%;
+    padding: 30px 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -683,21 +861,6 @@ div .statc {
   padding-bottom: 8px;
 }
 
-.listing {
-  text-align: center;
-  padding-top: 20px;
-  padding-left: 15px;
-  padding-right: 10px;
-}
-.listing ul {
-  display: inline-block;
-  text-align: left;
-}
-.listing li {
-  font-size: 18px;
-  padding-bottom: 28px;
-  list-style: none;
-}
 
 @media only screen and (max-width: 650px) {
   #learncard li,

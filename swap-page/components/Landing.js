@@ -9,12 +9,12 @@ export default function Landing() {
     return(
         <>
             <section id={styles.home} className="bg-purplewhite dark:bg-midnight text-midnight dark:text-white">
-                <div id={styles.sectiona} className="bg-purplewhite dark:bg-midnight text-midnight dark:text-white">
-                <div className={styles.Topic}>
+                <div className={styles.Topic}> 
                     <div className={styles.stata}>if not Afroswap,what else?</div>
-                    <h1 className={styles.statb}>
-                    With a dash of Royalty, Swap your tokens
-                    </h1>
+                    <div className={styles.statb}>
+                        With a dash of Royalty
+                        Swap your tokens
+                    </div>
                     <div className={styles.statc}>
                     The most effective decentralized exchange-based platform for token
                     trading.
@@ -32,16 +32,15 @@ export default function Landing() {
                 <div className={styles.frame1}>
                     <Image src={crown} alt="crown" width={600} height={500} />
                 </div>
-                </div>
             </section>
             <section id={styles.sectionb} className="bg-purplewhite dark:bg-midnight text-midnight dark:text-white">
                 <div className={styles.sectionba}>
                     <h2 className={styles.Topicb}>Accessibility and Affordability</h2>
                     <p>
-                    Have direct access to rare tokens and coins at affordable trade rates.
+                        Have direct access to rare tokens and coins at affordable trade rates.
                     </p>
                     <div className={styles.frame2}>
-                    <Image src={bannerImg} alt="banner" width={600} height={400} />
+                        <Image src={bannerImg} alt="banner" width={600} height={400} />
                     </div>
                 </div>
             </section>
