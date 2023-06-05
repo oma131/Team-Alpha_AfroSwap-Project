@@ -143,9 +143,9 @@
 /* landing */
 #home {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: 100%;
   display: flex;
-  padding: 100px 50px 0px 50px;
+  padding: 100px 50px 40px 50px;
 }
 
 
@@ -226,14 +226,15 @@ div .statc {
 }
 
 #sectionca {
-  height: 90vh;
+  height: 100%;
 }
-#sectionb{
-  height: 100vh;
+#sectionba{
+  padding-top: 20px;
+  height: 100%;
 }
-.sectionba {
+#sectionba {
   padding: 0px 50px 0px 50px;
-  height: 95vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,16 +247,16 @@ div .statc {
   padding: 30px 50px;
   margin-bottom: 50px;
 }
-#sectionb,
+#sectionba,
 .sectionc {
   text-align: center;
 }
-#sectionb h2,
+#sectionba h2,
 .sectionc h2 {
   font-size: 26px;
   font-weight: 700;
 }
-#sectionb p {
+#sectionba p {
   font-size: 20px;
 }
 
@@ -314,17 +315,25 @@ div .statc {
 
 @media only screen and (max-width: 850px) {
   .sectionc{
-    margin-top: 350px;
+    margin-top: 500px !important;
+  }
+  #home {
+    height: 100% !important;
   }
   .frame1{
-    width: 100%;
-    height: 50vh;
+    height: 70% !important;
+    width: 100% !important;
   }
+
   .Topic{
     width: 90%;
   }
-  .sectionba{
-    padding-top: 200px;
+  /* #sectionb {
+    background-color: yellow;
+    height: 50vh !important;
+  } */
+  #sectionba{
+    padding-top: 5px;
   }
   #review{
     margin-top: 100px;
@@ -334,8 +343,8 @@ div .statc {
 
 @media only screen and (max-width: 992px) {
   #review {
-    height: 50vh !important; 
-    margin-top: 100px;
+    height: 100% !important; 
+    margin-top: 5px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -361,7 +370,7 @@ div .statc {
   }
 
   #home {
-    height: 45vh;
+    height: 100%;
     padding-top: 100px;
     display: flex;
     flex-direction: row;
@@ -372,7 +381,7 @@ div .statc {
 
   .frame1{
     width: 100%;
-    height: 50vh;
+    height: 50vh !important;
   }
 
   
@@ -431,21 +440,19 @@ div .statc {
     border: 1px solid #c239fb;
   }
 
-  #sectionb{
-    height: 50vh;
+  #sectionba{
+    height: 100%;
   }
 
-  .sectionba {
-    margin-top: 200px;
+  #sectionba {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .frame2 img {
-    padding: 30px 20px;
-  }
+  
   .frame2 img {
     height: 100%;
     width: 100%;
@@ -453,7 +460,7 @@ div .statc {
     margin-bottom: 50px;
   }
   .sectionc{
-    margin-top: 350px;
+    margin-top: 5px !important;
   }
 
   .Topic{
@@ -637,12 +644,12 @@ div .statc {
   .Topic{
     padding-top: 5px;
   }
-  .sectionba{
+  #sectionba{
     margin-top: 10px;
   }
 
   .sectionc{
-    margin-top: 350px;
+    margin-top: 250px;
   }
   .sectcheader{
     font-size: 20px;
@@ -779,8 +786,8 @@ div .statc {
   #form button {
     width: 40%;
   }
-  .sectionba{
-    padding-top: 250px;
+  #sectionba{
+    padding-top: 10px;
   }
   
 }
@@ -795,33 +802,40 @@ div .statc {
   .reserved {
     text-align: left;
   }
-  .sectionba{
+  #sectionba{
     margin-top: 100px;
   }
   
 }
 
-@media only screen and (max-width: 400px) {
-  .sectionba{
-    padding-bottom: 0;
-    margin-top: 100px;
-  }
+@media only screen and (max-width: 375px) {
+ #sectionba{
+  padding-top: 10px;
+ }
+ .sectionc{
+  margin-top: 10px !important;
+ }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
   .footer-b {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .sectionba{
-    padding-top: 350px;
+  .learn{
+    margin-top: 5%;
+  }
+  #sectionba{
+    height: 100%;
+    margin-top: 10px;
   }
   .frame2 img {
     height: 100%;
     width: 100%;
-    padding: 30px 50px;
-    margin-bottom: 50px;
+  }
+  .sectionc{
+    margin-top: 60%;
   }
 }
 

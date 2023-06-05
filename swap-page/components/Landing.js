@@ -33,17 +33,15 @@ export default function Landing() {
                     <Image src={crown} alt="crown" width={600} height={500} />
                 </div>
             </section>
-            <section id={styles.sectionb} className="bg-purplewhite dark:bg-midnight text-midnight dark:text-white">
-                <div className={styles.sectionba}>
-                    <h2 className={styles.Topicb}>Accessibility and Affordability</h2>
-                    <p>
-                        Have direct access to rare tokens and coins at affordable trade rates.
-                    </p>
-                    <div className={styles.frame2}>
-                        <Image src={bannerImg} alt="banner" width={600} height={400} />
-                    </div>
+            <div id={styles.sectionba} className="bg-purplewhite dark:bg-midnight text-midnight dark:text-white" >
+                <h2 className={styles.Topicb}>Accessibility and Affordability</h2>
+                <p>
+                    Have direct access to rare tokens and coins at affordable trade rates.
+                </p>
+                <div className={styles.frame2}>
+                    <Image src={bannerImg} alt="banner" width={800} height={600} />
                 </div>
-            </section>
+            </div>
             <section id="sectionca" className="bg-midnight dark:bg-purplewhite text-white dark:text-midnight">
                 <div className={styles.sectionc}>
                     <h2 className={styles.Topicc}>Community</h2>
